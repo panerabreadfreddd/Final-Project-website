@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+		<html>
+
+<head>
+
+<script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+
+<title>My Portfolio</title>
+
+</head>
+
+<body>
+
+<div class="toggle">
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+</div>
+
+<div class="container">
+
+<div class="header">
+
+<div class="navbar">
+<b> 
+<a href="#">Home</a>
+
+		<a href="#about">About Me</a>
+
+		<a href="#projects">ARTWORK</a>
+
+<a href="#contact">Contact</a>
+</b>
+</div>
+
+<div class="head-content">
+
+<img src="img/me2.jpg" height="300px" width="300px">
+
+<b>
+		<p class="name">Hi I'm Fred!</p>
+</b>
+
+<p class="desc">Web Developer</p>
+
+</div>
+
+</div>
+
+<div class="about-section" id="about">
+
+<h2>About Me</h2>
+
+<p>Highly driven student with 4 years of IT experience. Self taught Artist.
+
+</p>
+
+<p>Skills: Java, HTML, Twi, GA, Graphic design</p>
+
+<p>
+
+<b>
+CONTACT ME @
+</b>
+
+</p>
+
+<p>
+
+<a href ="https://www.linkedin.com/in/fred-odonkor-730b95199/"> 
+LINKEDIN
+</a>
+
+</p>
+
+</div>
+
+<br>
+
+<div class="projects-section" id="projects">
+
+<h2>ARTWORK</h2>
+
+<img src="img/dd.jpg" height="600px" width="600px">
+<br> </br>
+<img src="img/art3.JPG" height="600px" width="600px">
+<br> </br>
+<img src="img/art33.JPG" height="600px" width="00px">
+<br> </br>
+<img src="img/art1.jpg" height="300px" width="300px">
+<br> </br>
+<img src="img/ddd.jpg" height="300px" width="300px">
+<br> </br>
+<img src="img/dan.jpg" height="300px" width="300px">
+<br></br>
+<img src="img/mypage.jpg" height="200px" width="200px">
+<br> </br>
+
+<a href ="https://www.instagram.com/fredo.arts/?hl=en"
+>MY ART PAGE</a>
+</div>
+
+<div class="contact-section" id="contact">
+
+<span>Contact</span>
+
+<input type="text" class="inp-name" placeholder="Name">
+
+<input type="text" class="inp-mail" placeholder="Your Email">
+
+<textarea rows="10" cols="40" placeholder="Your Message" class="inp-msg"></textarea>
+
+<input type="button" class="inp-btn" value="Submit">
+
+</div>
+
+<div class="copyright">
+
+<p>My portfolio &copy; 2022</p>
+
+</div>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$(".toggle").click(function(){
+
+$(".navbar").slideToggle()
+
+});
+
+});
+
+$(window).resize(function(){
+
+if($(window).width()>768)
+
+{
+
+$('.navbar').show();
+
+}
+
+else
+
+{
+
+$('.navbar').hide();
+
+}
+
+});
+
+</script>
+
+</html>
